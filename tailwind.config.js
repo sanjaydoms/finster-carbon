@@ -7,13 +7,14 @@ export default {
     extend: {
       colors: {
         /* Light green ground rather than pure white — planted, not screen.
-           Deepened from #eff5e9, which read as washed-out; this holds the
-           content better while staying a light section. */
-        paper: '#e4edd8',
+           Deepened twice from the original #eff5e9, which read as washed-out.
+           `stone` and `amber-700` were darkened alongside it so micro labels
+           and the brass accent stay above 4.5:1 on the alternate ground. */
+        paper: '#d4e3c1',
         sage: {
           50: '#f5f9f0',
-          100: '#d4e1c4',
-          200: '#c3d4b2',
+          100: '#c2d7a9',
+          200: '#b3cb98',
           300: '#d5e3c6',
           400: '#7f9169',
         },
@@ -26,11 +27,11 @@ export default {
         },
         ink: '#12170f',
         /* Muted green-grey, darkened to hold contrast on the green ground. */
-        stone: '#55604c',
+        stone: '#4a5341',
         /* Brass: the single metallic accent. */
         amber: {
           DEFAULT: '#c79a58',
-          700: '#77592c',
+          700: '#6f5228',
         },
         carbon: '#0c110c',
       },

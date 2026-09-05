@@ -9,8 +9,8 @@
 /* END TAILWIND IMPORTS — ALL OTHER CSS MUST GO BELOW THIS LINE */
 
 :root {
-  --paper: #e4edd8;
-  --stone-panel: #d4e1c4;
+  --paper: #d4e3c1;
+  --stone-panel: #c2d7a9;
   --forest: #2f4a34;
   --brass: #c79a58;
 }
@@ -24,7 +24,7 @@ body {
   letter-spacing: -0.008em;
 }
 ::selection {
-  background-color: #77592c;
+  background-color: #6f5228;
   color: #eff5e9;
 }
 /* ---------------------------------------------------------------
