@@ -30,22 +30,28 @@ export function SiteHeader() {
     <header
       className={[
       'fixed inset-x-0 top-0 z-50 transition-colors duration-200 ease-out',
-      scrolled ? 'bg-ground/80 backdrop-blur-xl backdrop-saturate-150' : 'bg-transparent'].
+      scrolled ? 'bg-paper/80 backdrop-blur-xl backdrop-saturate-150' : 'bg-transparent'].
       join(' ')}>
       
       <div
         className={[
         'mx-auto flex h-20 max-w-page items-center justify-between px-5 sm:h-24 sm:px-8',
-        scrolled ? 'border-b border-paper/10' : ''].
+        scrolled ? 'border-b border-ink/10' : ''].
         join(' ')}>
         
         <a href="#top" className="flex shrink-0 items-center">
+          {/* The artwork is dark on transparency. It reads as-is against the
+              light scrolled bar, but has to be knocked out to cream while the
+              header is transparent over the dark hero. */}
           <img
             src="/finster-carbon-logo.png"
             alt="Finster Carbon"
             width={666}
             height={375}
-            className="logo-knockout h-12 w-auto sm:h-16" />
+            className={[
+            'h-12 w-auto transition-[filter] duration-200 ease-out sm:h-16',
+            scrolled ? '' : 'logo-knockout'].
+            join(' ')} />
           
         </a>
 
@@ -56,7 +62,7 @@ export function SiteHeader() {
             href={link.href}
             className={[
             'micro whitespace-nowrap transition-colors duration-200 ease-out',
-            scrolled ? 'text-paper/80 hover:text-paper' : 'text-paper/80 hover:text-paper'].
+            scrolled ? 'text-ink/80 hover:text-ink' : 'text-paper/80 hover:text-paper'].
             join(' ')}>
             
               {link.label}
@@ -69,7 +75,7 @@ export function SiteHeader() {
           className={[
           'micro whitespace-nowrap px-5 py-3 transition-colors duration-200 ease-out',
           scrolled ?
-          'bg-amber text-carbon hover:bg-amber-700 hover:text-paper' :
+          'bg-moss text-paper hover:bg-moss-600' :
           'border border-paper/40 text-paper hover:border-amber hover:bg-amber hover:text-carbon'].
           join(' ')}>
           
@@ -82,7 +88,7 @@ export function SiteHeader() {
         aria-hidden="true"
         style={{ scaleX: progress }}
         className={[
-        'h-px origin-left bg-amber transition-opacity duration-200 ease-out',
+        'h-px origin-left bg-moss transition-opacity duration-200 ease-out',
         scrolled ? 'opacity-100' : 'opacity-0'].
         join(' ')} />
       

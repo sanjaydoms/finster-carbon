@@ -17,7 +17,7 @@ import { FinalHero } from './components/sections/FinalHero';
 
 export function App() {
   return (
-    <div className="w-full bg-ground font-sans text-paper">
+    <div className="w-full bg-paper font-sans text-ink">
       <SiteHeader />
       <main>
         <Hero />

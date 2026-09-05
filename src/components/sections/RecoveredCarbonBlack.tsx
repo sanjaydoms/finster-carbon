@@ -8,7 +8,7 @@ import { SplitHeading } from '../ui/SplitHeading';
 
 export function RecoveredCarbonBlack() {
   return (
-    <section id="recovered-carbon-black" className="w-full bg-ground">
+    <section id="recovered-carbon-black" className="w-full bg-paper">
       <div className="relative isolate min-h-[92svh] w-full overflow-hidden">
         <ParallaxImage
           src={images.rcbMacro}
@@ -43,11 +43,11 @@ export function RecoveredCarbonBlack() {
             <Reveal>
               <Eyebrow tone="moss">Applications</Eyebrow>
             </Reveal>
-            <ul className="mt-6 border-t border-paper/12">
+            <ul className="mt-6 border-t border-ink/12">
               {rcbApplications.map((application, i) =>
               <Reveal as="li" key={application} delay={i * 0.04}>
-                  <div className="flex items-baseline justify-between border-b border-paper/12 py-4">
-                    <span className="display text-[clamp(1.4rem,3vw,2.25rem)] text-paper">
+                  <div className="flex items-baseline justify-between border-b border-ink/12 py-4">
+                    <span className="display text-[clamp(1.4rem,3vw,2.25rem)] text-ink">
                       {application}
                     </span>
                   </div>
@@ -58,7 +58,7 @@ export function RecoveredCarbonBlack() {
 
           <div className="lg:col-span-7 lg:pl-8">
             <Reveal delay={0.06}>
-              <p className="max-w-none text-[clamp(1.2rem,2vw,1.75rem)] font-light leading-[1.35] tracking-[-0.015em] text-paper">
+              <p className="max-w-none text-[clamp(1.2rem,2vw,1.75rem)] font-light leading-[1.35] tracking-[-0.015em] text-ink">
                 Finster's Recovered Carbon Black is produced from end-of-life tyres and
                 developed as a practical material option for applications where
                 performance, consistency and resource efficiency matter.

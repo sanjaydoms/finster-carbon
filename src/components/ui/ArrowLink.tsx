@@ -11,14 +11,14 @@ type ArrowLinkProps = {
 };
 
 const textTone: Record<NonNullable<ArrowLinkProps['tone']>, string> = {
-  dark: 'text-sage-300 hover:text-paper focus-visible:outline-paper',
+  dark: 'text-moss hover:text-moss-600 focus-visible:outline-moss',
   light: 'text-sage-300 hover:text-paper focus-visible:outline-paper',
-  amber: 'text-amber-300 hover:text-paper focus-visible:outline-amber'
+  amber: 'text-amber-700 hover:text-amber focus-visible:outline-amber'
 };
 
 const pillTone: Record<NonNullable<ArrowLinkProps['tone']>, string> = {
-  dark: 'bg-moss-800 text-paper hover:bg-moss-700 focus-visible:outline-paper',
-  light: 'bg-paper text-carbon hover:bg-sage-300 focus-visible:outline-paper',
+  dark: 'bg-moss text-paper hover:bg-moss-600 focus-visible:outline-moss',
+  light: 'bg-paper text-ink hover:bg-sage-200 focus-visible:outline-paper',
   amber: 'bg-amber text-carbon hover:bg-amber-700 hover:text-paper focus-visible:outline-amber'
 };
 

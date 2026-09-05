@@ -9,7 +9,10 @@
 /* END TAILWIND IMPORTS — ALL OTHER CSS MUST GO BELOW THIS LINE */
 
 :root {
-  --ground: #33503a;
+  --paper: #e4edd8;
+  --stone-panel: #d4e1c4;
+  --forest: #2f4a34;
+  --brass: #c79a58;
 }
 html {
   scroll-behavior: smooth;
@@ -17,12 +20,12 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 body {
-  background-color: var(--ground);
+  background-color: var(--paper);
   letter-spacing: -0.008em;
 }
 ::selection {
-  background-color: #c79a58;
-  color: #0c110c;
+  background-color: #77592c;
+  color: #eff5e9;
 }
 /* ---------------------------------------------------------------
    Type system — industrial grotesque for the statement, an editorial
@@ -128,10 +131,10 @@ body {
   vertical-align: bottom;
   padding-bottom: 0.2em;
 }
-/* The supplied logo is dark artwork on transparency, and every surface it
-   sits on is dark, so it is knocked out to a flat cream. Flattening rather
-   than inverting keeps the particle C reading as one cluster, instead of
-   letting its mid-grey blobs sink into the green. */
+/* The logo is dark artwork on transparency, so it reads as-is on the light
+   grounds. Over the dark hero it is knocked out to a flat cream — flattening
+   rather than inverting keeps the particle C reading as one cluster instead
+   of letting its mid-grey blobs sink into the image. */
 .logo-knockout {
   filter: brightness(0) invert(1);
 }

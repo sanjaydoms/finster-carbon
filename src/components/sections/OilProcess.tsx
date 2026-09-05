@@ -7,7 +7,7 @@ import { SectionHeading } from '../ui/SectionHeading';
 
 export function OilProcess() {
   return (
-    <section id="process" className="w-full bg-ground py-28 sm:py-40">
+    <section id="process" className="w-full bg-paper py-28 sm:py-40">
       <div className="mx-auto max-w-page px-5 sm:px-8">
         <SectionHeading
           eyebrow="Inside the process"
@@ -25,14 +25,14 @@ export function OilProcess() {
                   <div
                     className={[
                     'relative flex gap-6 rounded-sm px-5 py-5 transition-colors duration-200 ease-out sm:px-7',
-                    isLast ? 'bg-moss-800 text-paper' : 'bg-sage-100'].
+                    isLast ? 'bg-moss text-paper' : 'bg-sage-100'].
                     join(' ')}>
                     
                     <div className="flex-1">
                       <h3
                         className={[
                         't-sub',
-                        isLast ? 'text-paper' : 'text-paper'].
+                        isLast ? 'text-paper' : 'text-ink'].
                         join(' ')}>
                         
                         {step.step}
@@ -40,7 +40,7 @@ export function OilProcess() {
                       <p
                         className={[
                         'mt-2 max-w-md text-sm leading-relaxed',
-                        isLast ? 'text-paper/80' : 'text-paper/60'].
+                        isLast ? 'text-paper/80' : 'text-ink/60'].
                         join(' ')}>
                         
                         {step.note}
@@ -49,7 +49,7 @@ export function OilProcess() {
                   </div>
                   {!isLast &&
                   <div className="flex justify-center py-2" aria-hidden="true">
-                      <ArrowDownIcon className="h-4 w-4 text-paper/40" />
+                      <ArrowDownIcon className="h-4 w-4 text-moss/60" />
                     </div>
                   }
                 </Reveal>);
@@ -67,18 +67,18 @@ export function OilProcess() {
             </Reveal>
 
             <Reveal delay={0.12}>
-              <div className="mt-8 border-t border-paper/15 pt-6">
+              <div className="mt-8 border-t border-ink/15 pt-6">
                 <Eyebrow>Recovered alongside</Eyebrow>
                 <ul className="mt-5 space-y-4">
                   {coOutputs.map((output) =>
                   <li
                     key={output.name}
-                    className="border-b border-paper/10 pb-4 last:border-b-0">
+                    className="border-b border-ink/10 pb-4 last:border-b-0">
                     
-                      <h3 className="label text-paper">
+                      <h3 className="label text-ink">
                         {output.name}
                       </h3>
-                      <p className="mt-1 text-sm leading-relaxed text-paper/60">
+                      <p className="mt-1 text-sm leading-relaxed text-ink/60">
                         {output.note}
                       </p>
                     </li>

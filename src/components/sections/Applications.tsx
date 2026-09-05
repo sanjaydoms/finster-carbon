@@ -7,7 +7,7 @@ export function Applications() {
   const [featured, ...supporting] = applicationGroups;
 
   return (
-    <section id="applications" className="w-full bg-ground py-28 sm:py-40">
+    <section id="applications" className="w-full bg-paper py-28 sm:py-40">
       <div className="mx-auto max-w-page px-5 sm:px-8">
         <div className="grid gap-10 lg:grid-cols-12 lg:gap-16">
           <SectionHeading
@@ -17,7 +17,7 @@ export function Applications() {
             className="lg:col-span-7" />
           
           <Reveal delay={0.1} className="lg:col-span-5 lg:self-end lg:pb-2">
-            <p className="lede text-paper/65">
+            <p className="lede text-ink/65">
               Recovered carbon black replaces virgin material across compounding,
               moulding and coating operations — the same specifications, a different
               origin.
@@ -26,10 +26,10 @@ export function Applications() {
         </div>
 
         <div className="mt-14 flex items-center gap-4">
-          <span className="micro bg-paper px-3 py-1.5 text-carbon">
+          <span className="micro bg-ink px-3 py-1.5 text-paper">
             rCB
           </span>
-          <span className="h-px flex-1 bg-paper/15" />
+          <span className="h-px flex-1 bg-ink/15" />
         </div>
 
         {/* Rubber is the primary market, so it gets the dominant block. */}
@@ -71,12 +71,12 @@ export function Applications() {
 
                   </div>
                   <div className="flex flex-1 flex-col p-6 sm:p-8">
-                    <h3 className="t-sub text-paper">{group.title}</h3>
+                    <h3 className="t-sub text-ink">{group.title}</h3>
                     <ul className="mt-4 flex flex-wrap gap-x-2 gap-y-2">
                       {group.items.map((item) =>
                     <li
                       key={item}
-                      className="border border-paper/22 px-3 py-1.5 text-sm text-paper/70">
+                      className="border border-ink/22 px-3 py-1.5 text-sm text-ink/70">
 
                           {item}
                         </li>
@@ -96,15 +96,15 @@ export function Applications() {
               
               TPO
             </span>
-            <span className="h-px flex-1 bg-paper/15" />
+            <span className="h-px flex-1 bg-ink/15" />
           </div>
         </Reveal>
 
         <Reveal delay={0.1}>
-          <div className="mt-8 flex flex-col gap-8 border-y border-paper/15 py-10 lg:flex-row lg:items-end lg:justify-between">
+          <div className="mt-8 flex flex-col gap-8 border-y border-ink/15 py-10 lg:flex-row lg:items-end lg:justify-between">
             <div>
-              <h3 className="t-section max-w-2xl text-paper">Tyre Pyrolysis Oil</h3>
-              <p className="lede mt-4 text-paper/65">
+              <h3 className="t-section max-w-2xl text-ink">Tyre Pyrolysis Oil</h3>
+              <p className="lede mt-4 text-ink/65">
                 A recovered material stream created through tyre pyrolysis, supporting the
                 wider resource-recovery system.
               </p>
