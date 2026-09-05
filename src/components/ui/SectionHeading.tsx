@@ -23,9 +23,9 @@ export function SectionHeading({
   headingClassName = ''
 }: SectionHeadingProps) {
   const size = level === 'major' ? 't-major' : 't-section';
-  const color = tone === 'light' ? 'text-paper' : 'text-ink';
+  const color = 'text-paper';
   const accentColor =
-  tone === 'light' ? 'serif-accent text-amber' : 'serif-accent text-amber-700';
+  'serif-accent text-amber';
 
   return (
     <div className={className}>

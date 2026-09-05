@@ -9,7 +9,7 @@ type EyebrowProps = {
 const toneClasses: Record<NonNullable<EyebrowProps['tone']>, string> = {
   dark: 'text-stone',
   light: 'text-paper/65',
-  moss: 'text-amber-700'
+  moss: 'text-amber-300'
 };
 
 /**

@@ -30,12 +30,12 @@ export function SiteFooter() {
   return (
     <footer className="w-full bg-sage-100 py-20 sm:py-24">
       <div className="mx-auto max-w-page px-5 sm:px-8">
-        <div className="grid gap-10 border-b border-ink/15 pb-12 lg:grid-cols-12">
+        <div className="grid gap-10 border-b border-paper/15 pb-12 lg:grid-cols-12">
           <div className="lg:col-span-5">
-            <p className="font-serif text-[1.75rem] leading-none tracking-[-0.012em] text-ink">
+            <p className="font-serif text-[1.75rem] leading-none tracking-[-0.012em] text-paper">
               Finster Carbon
             </p>
-            <p className="mt-3 max-w-sm text-[0.9375rem] leading-relaxed tracking-[-0.01em] text-ink/60">
+            <p className="mt-3 max-w-sm text-[0.9375rem] leading-relaxed tracking-[-0.01em] text-paper/60">
               Advanced tyre recovery and recovered materials for industry.
             </p>
           </div>
@@ -53,7 +53,7 @@ export function SiteFooter() {
               <li key={link.label}>
                     <a
                   href={link.href}
-                  className="text-[0.9375rem] tracking-[-0.01em] text-ink/70 transition-colors duration-200 ease-out hover:text-moss">
+                  className="text-[0.9375rem] tracking-[-0.01em] text-paper/70 transition-colors duration-200 ease-out hover:text-amber">
                   
                       {link.label}
                     </a>
@@ -65,7 +65,7 @@ export function SiteFooter() {
         </div>
 
         <div className="flex flex-col gap-3 pt-6 sm:flex-row sm:items-center sm:justify-between">
-          <p className="text-xs text-ink/50">
+          <p className="text-xs text-paper/50">
             © {new Date().getFullYear()} Finster Carbon. All rights reserved.
           </p>
           <p className="micro text-stone">

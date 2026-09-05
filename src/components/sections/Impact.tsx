@@ -7,7 +7,7 @@ export function Impact() {
   const [lead, ...rest] = impactStats;
 
   return (
-    <section className="w-full bg-moss py-28 sm:py-40">
+    <section className="w-full bg-moss-700 py-28 sm:py-40">
       <div className="mx-auto max-w-page px-5 sm:px-8">
         <SectionHeading
           eyebrow="What recovery makes possible"

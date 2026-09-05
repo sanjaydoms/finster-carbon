@@ -9,10 +9,7 @@
 /* END TAILWIND IMPORTS — ALL OTHER CSS MUST GO BELOW THIS LINE */
 
 :root {
-  --paper: #eff5e9;
-  --stone-panel: #e2ecd8;
-  --forest: #2f4a34;
-  --brass: #c79a58;
+  --ground: #33503a;
 }
 html {
   scroll-behavior: smooth;
@@ -20,12 +17,12 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 body {
-  background-color: var(--paper);
+  background-color: var(--ground);
   letter-spacing: -0.008em;
 }
 ::selection {
-  background-color: #77592c;
-  color: #eff5e9;
+  background-color: #c79a58;
+  color: #0c110c;
 }
 /* ---------------------------------------------------------------
    Type system — industrial grotesque for the statement, an editorial

@@ -12,13 +12,13 @@ type Path = {
 const paths: Path[] = [
 {
   label: 'Carbon path',
-  accent: '#2f4a34',
+  accent: '#a8c49b',
   output: 'Recovered Carbon Black',
   steps: ['End-of-life tyre', 'Pyrolysis', 'Recovered Carbon Black', 'Rubber / Plastics / Coatings']
 },
 {
   label: 'Oil path',
-  accent: '#8a6a3b',
+  accent: '#c79a58',
   output: 'Tyre Pyrolysis Oil',
   steps: ['End-of-life tyre', 'Pyrolysis', 'Tyre Pyrolysis Oil', 'Further industrial use']
 }];
@@ -26,7 +26,7 @@ const paths: Path[] = [
 
 function PathTrack({ path, delay }: {path: Path;delay: number;}) {
   return (
-    <div className="border-t border-ink/15 pt-6">
+    <div className="border-t border-paper/15 pt-6">
       <div className="flex items-center gap-3">
         <span className="h-2 w-2 rounded-full" style={{ backgroundColor: path.accent }} />
         <span
@@ -40,8 +40,8 @@ function PathTrack({ path, delay }: {path: Path;delay: number;}) {
       <ol className="mt-5 flex flex-wrap items-stretch gap-x-3 gap-y-3">
         {path.steps.map((step, i) =>
         <Reveal as="li" key={step} delay={delay + i * 0.05} className="flex items-center gap-3">
-            <div className="min-w-[9.5rem] flex-1 bg-paper px-4 py-3">
-              <span className="block font-display text-sm font-semibold leading-tight text-ink">
+            <div className="min-w-[9.5rem] flex-1 bg-ground px-4 py-3">
+              <span className="block font-display text-sm font-semibold leading-tight text-paper">
                 {step}
               </span>
             </div>
@@ -67,7 +67,7 @@ export function CircularSystem() {
           {/* Single feedstock anchors the left; the two tracks diverge from it. */}
           <Reveal className="lg:col-span-4">
             <figure className="lg:sticky lg:top-28">
-              <div className="relative aspect-square w-full max-w-sm overflow-hidden rounded-full bg-paper">
+              <div className="relative aspect-square w-full max-w-sm overflow-hidden rounded-full bg-ground">
                 <img
                   src={images.tyre}
                   alt="A single worn end-of-life tyre lying on wet cracked concrete"
@@ -75,10 +75,10 @@ export function CircularSystem() {
                 
               </div>
               <figcaption className="mt-6 max-w-sm">
-                <span className="label text-ink">
+                <span className="label text-paper">
                   One end-of-life tyre
                 </span>
-                <p className="mt-2 text-sm leading-relaxed text-ink/60">
+                <p className="mt-2 text-sm leading-relaxed text-paper/60">
                   A single feedstock enters the reactor and leaves as two distinct
                   industrial material streams.
                 </p>

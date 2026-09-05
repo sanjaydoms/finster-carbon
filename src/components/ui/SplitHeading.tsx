@@ -21,7 +21,7 @@ type SplitHeadingProps = {
 export function SplitHeading({
   text,
   accent,
-  accentClassName = 'serif-accent text-amber-700',
+  accentClassName = 'serif-accent text-amber',
   className = '',
   as = 'h2',
   delay = 0

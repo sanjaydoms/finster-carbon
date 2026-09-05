@@ -22,11 +22,11 @@ export function RcbPerformance() {
           <ul className="order-2 space-y-8 lg:order-1 lg:col-span-4">
             {left.map((attribute, i) =>
             <Reveal as="li" key={attribute.name} delay={i * 0.05}>
-                <div className="border-t border-ink/15 pt-4 lg:text-right">
-                  <h3 className="label text-ink">
+                <div className="border-t border-paper/15 pt-4 lg:text-right">
+                  <h3 className="label text-paper">
                     {attribute.name}
                   </h3>
-                  <p className="mt-2 text-sm leading-relaxed text-ink/60">
+                  <p className="mt-2 text-sm leading-relaxed text-paper/60">
                     {attribute.note}
                   </p>
                 </div>
@@ -50,11 +50,11 @@ export function RcbPerformance() {
           <ul className="order-3 space-y-8 lg:col-span-4">
             {right.map((attribute, i) =>
             <Reveal as="li" key={attribute.name} delay={i * 0.05}>
-                <div className="border-t border-ink/15 pt-4">
-                  <h3 className="label text-ink">
+                <div className="border-t border-paper/15 pt-4">
+                  <h3 className="label text-paper">
                     {attribute.name}
                   </h3>
-                  <p className="mt-2 text-sm leading-relaxed text-ink/60">
+                  <p className="mt-2 text-sm leading-relaxed text-paper/60">
                     {attribute.note}
                   </p>
                 </div>
