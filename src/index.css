@@ -128,6 +128,13 @@ body {
   vertical-align: bottom;
   padding-bottom: 0.2em;
 }
+/* The supplied logo is dark artwork on transparency, and every surface it
+   sits on is dark, so it is knocked out to a flat cream. Flattening rather
+   than inverting keeps the particle C reading as one cluster, instead of
+   letting its mid-grey blobs sink into the green. */
+.logo-knockout {
+  filter: brightness(0) invert(1);
+}
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;

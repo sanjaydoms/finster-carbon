@@ -32,10 +32,16 @@ export function SiteFooter() {
       <div className="mx-auto max-w-page px-5 sm:px-8">
         <div className="grid gap-10 border-b border-paper/15 pb-12 lg:grid-cols-12">
           <div className="lg:col-span-5">
-            <p className="font-serif text-[1.75rem] leading-none tracking-[-0.012em] text-paper">
-              Finster Carbon
-            </p>
-            <p className="mt-3 max-w-sm text-[0.9375rem] leading-relaxed tracking-[-0.01em] text-paper/60">
+            {/* Sized larger than the header mark: the artwork carries its own
+                transparent margin, so only ~69% of the box height is ink. */}
+            <img
+              src="/finster-carbon-logo.png"
+              alt="Finster Carbon"
+              width={666}
+              height={375}
+              className="logo-knockout h-20 w-auto sm:h-24" />
+            
+            <p className="mt-4 max-w-sm text-[0.9375rem] leading-relaxed tracking-[-0.01em] text-paper/60">
               Advanced tyre recovery and recovered materials for industry.
             </p>
           </div>

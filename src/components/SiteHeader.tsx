@@ -40,15 +40,12 @@ export function SiteHeader() {
         join(' ')}>
         
         <a href="#top" className="flex shrink-0 items-center">
-          {/* Supplied artwork is dark on transparency; the header is dark in
-              both its states, so the mark is knocked out to a flat cream. */}
           <img
             src="/finster-carbon-logo.png"
             alt="Finster Carbon"
             width={666}
             height={375}
-            className="h-12 w-auto sm:h-16"
-            style={{ filter: 'brightness(0) invert(1)' }} />
+            className="logo-knockout h-12 w-auto sm:h-16" />
           
         </a>
 
