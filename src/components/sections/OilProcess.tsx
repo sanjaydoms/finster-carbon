@@ -28,14 +28,6 @@ export function OilProcess() {
                     isLast ? 'bg-moss text-paper' : 'bg-sage-100'].
                     join(' ')}>
                     
-                    <span
-                      className={[
-                      'tnum font-display text-[0.8125rem] font-medium tracking-[-0.004em]',
-                      isLast ? 'text-paper/70' : 'text-moss'].
-                      join(' ')}>
-                      
-                      {String(i + 1).padStart(2, '0')}
-                    </span>
                     <div className="flex-1">
                       <h3
                         className={[

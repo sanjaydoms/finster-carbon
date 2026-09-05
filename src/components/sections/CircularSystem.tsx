@@ -41,10 +41,7 @@ function PathTrack({ path, delay }: {path: Path;delay: number;}) {
         {path.steps.map((step, i) =>
         <Reveal as="li" key={step} delay={delay + i * 0.05} className="flex items-center gap-3">
             <div className="min-w-[9.5rem] flex-1 bg-paper px-4 py-3">
-              <span className="tnum block font-display text-[0.75rem] font-medium tracking-[-0.004em] text-stone">
-                {String(i + 1).padStart(2, '0')}
-              </span>
-              <span className="mt-1 block font-display text-sm font-semibold leading-tight text-ink">
+              <span className="block font-display text-sm font-semibold leading-tight text-ink">
                 {step}
               </span>
             </div>

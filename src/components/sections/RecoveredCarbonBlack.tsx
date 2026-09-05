@@ -50,9 +50,6 @@ export function RecoveredCarbonBlack() {
                     <span className="display text-[clamp(1.4rem,3vw,2.25rem)] text-ink">
                       {application}
                     </span>
-                    <span className="font-display text-[0.8125rem] tracking-[-0.004em] text-stone">
-                      {String(i + 1).padStart(2, '0')}
-                    </span>
                   </div>
                 </Reveal>
               )}

@@ -27,10 +27,7 @@ export function Sustainability() {
           {sustainabilityFocus.map((focus, i) =>
           <Reveal as="li" key={focus.title} delay={i * 0.06}>
               <div className="group grid items-baseline gap-4 border-b border-ink/15 py-8 transition-colors duration-150 ease-out hover:bg-sage-200 lg:grid-cols-12 lg:gap-10 lg:px-2">
-                <span className="tnum font-display text-[0.8125rem] font-medium tracking-[-0.004em] text-moss lg:col-span-1">
-                  {String(i + 1).padStart(2, '0')}
-                </span>
-                <h3 className="t-sub text-ink lg:col-span-4">{focus.title}</h3>
+                <h3 className="t-sub text-ink lg:col-span-5">{focus.title}</h3>
                 <p className="text-base leading-relaxed text-ink/65 lg:col-span-7">
                   {focus.body}
                 </p>

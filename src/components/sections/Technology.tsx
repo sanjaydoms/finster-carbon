@@ -17,10 +17,7 @@ export function Technology() {
           {technology.map((item, i) =>
           <Reveal key={item.title} delay={i * 0.05}>
               <article className="group grid gap-4 border-b border-ink/15 py-10 transition-colors duration-150 ease-out hover:bg-sage-100 lg:grid-cols-12 lg:gap-8 lg:px-2">
-                <span className="tnum font-display text-[0.8125rem] font-medium tracking-[-0.004em] text-moss lg:col-span-1">
-                  {item.index}
-                </span>
-                <h3 className="display text-[clamp(1.75rem,3.4vw,2.75rem)] text-ink lg:col-span-5">
+                <h3 className="display text-[clamp(1.75rem,3.4vw,2.75rem)] text-ink lg:col-span-6">
                   {item.title}
                 </h3>
                 <p className="max-w-xl text-base leading-relaxed text-ink/65 lg:col-span-6 lg:self-center">

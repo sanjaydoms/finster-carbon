@@ -6,7 +6,6 @@ import { SplitHeading } from '../ui/SplitHeading';
 
 const panels = [
 {
-  index: '01',
   title: ['Recovered', 'Carbon Black'],
   code: 'rCB',
   body: 'Recovered carbon material developed for rubber, plastics, paints and coatings.',
@@ -16,7 +15,6 @@ const panels = [
   alt: 'Recovered carbon black pellets spilling from an opened sack onto a concrete floor'
 },
 {
-  index: '02',
   title: ['Tyre', 'Pyrolysis Oil'],
   code: 'TPO',
   body: 'A recovered oil produced through the controlled thermal processing of end-of-life tyres.',
@@ -60,9 +58,6 @@ export function CoreIdea() {
                   alt={panel.alt}
                   className="h-full w-full object-cover transition-transform duration-300 ease-out group-hover:scale-[1.03]" />
                 
-                  <span className="tnum absolute left-5 top-5 font-display text-[0.8125rem] font-medium tracking-[-0.004em] text-paper">
-                    {panel.index}
-                  </span>
                 </div>
 
                 <div className="flex flex-1 flex-col p-6 sm:p-8">

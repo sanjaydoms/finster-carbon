@@ -76,17 +76,14 @@ export const applicationGroups = [
 
 export const technology = [
 {
-  index: '01',
   title: 'Pyrolysis',
   body: 'Controlled thermal processing designed to recover valuable components from end-of-life tyres.'
 },
 {
-  index: '02',
   title: 'Energy',
   body: 'Process gases can be utilised within the energy cycle of the operation.'
 },
 {
-  index: '03',
   title: 'Emission Control',
   body: 'Engineered systems support controlled treatment of process gases.'
 }];
