@@ -35,18 +35,21 @@ export function SiteHeader() {
       
       <div
         className={[
-        'mx-auto flex h-16 max-w-page items-center justify-between px-5 sm:h-20 sm:px-8',
+        'mx-auto flex h-20 max-w-page items-center justify-between px-5 sm:h-24 sm:px-8',
         scrolled ? 'border-b border-paper/10' : ''].
         join(' ')}>
         
-        <a
-          href="#top"
-          className={[
-          'font-serif text-[1.5rem] leading-none tracking-[-0.012em] transition-colors duration-200 ease-out',
-          scrolled ? 'text-paper' : 'text-paper'].
-          join(' ')}>
+        <a href="#top" className="flex shrink-0 items-center">
+          {/* Supplied artwork is dark on transparency; the header is dark in
+              both its states, so the mark is knocked out to a flat cream. */}
+          <img
+            src="/finster-carbon-logo.png"
+            alt="Finster Carbon"
+            width={666}
+            height={375}
+            className="h-12 w-auto sm:h-16"
+            style={{ filter: 'brightness(0) invert(1)' }} />
           
-          Finster
         </a>
 
         <nav aria-label="Primary" className="hidden items-center gap-7 lg:flex xl:gap-9">
