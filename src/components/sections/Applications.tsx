@@ -35,36 +35,54 @@ export function Applications() {
         {/* Rubber is the primary market, so it gets the dominant block. */}
         <div className="mt-8 grid gap-6 lg:grid-cols-12">
           <Reveal className="lg:col-span-7">
-            <article className="flex h-full flex-col bg-moss-800 p-8 sm:p-10">
-              <h3 className="t-major text-paper">{featured.title}</h3>
-              <ul className="mt-8 grid gap-x-8 sm:grid-cols-2">
-                {featured.items.map((item) =>
-                <li
-                  key={item}
-                  className="label border-b border-paper/20 py-3 text-paper/85">
-                  
-                    {item}
-                  </li>
-                )}
-              </ul>
+            <article className="group flex h-full flex-col overflow-hidden bg-moss-800">
+              <div className="aspect-[16/10] w-full overflow-hidden">
+                <img
+                  src={featured.image}
+                  alt={featured.alt}
+                  className="h-full w-full object-cover transition-transform duration-300 ease-out group-hover:scale-[1.03]" />
+
+              </div>
+              <div className="flex flex-1 flex-col p-8 sm:p-10">
+                <h3 className="t-major text-paper">{featured.title}</h3>
+                <ul className="mt-auto grid gap-x-8 pt-8 sm:grid-cols-2">
+                  {featured.items.map((item) =>
+                  <li
+                    key={item}
+                    className="label border-b border-paper/20 py-3 text-paper/85">
+
+                      {item}
+                    </li>
+                  )}
+                </ul>
+              </div>
             </article>
           </Reveal>
 
           <div className="grid gap-6 lg:col-span-5">
             {supporting.map((group, i) =>
             <Reveal key={group.title} delay={0.06 + i * 0.06} className="h-full">
-                <article className="flex h-full flex-col bg-sage-100 p-6 sm:p-8">
-                  <h3 className="t-sub text-paper">{group.title}</h3>
-                  <ul className="mt-4 flex flex-wrap gap-x-2 gap-y-2">
-                    {group.items.map((item) =>
-                  <li
-                    key={item}
-                    className="border border-paper/22 px-3 py-1.5 text-sm text-paper/70">
-                    
-                        {item}
-                      </li>
-                  )}
-                  </ul>
+                <article className="group flex h-full flex-col overflow-hidden bg-sage-100">
+                  <div className="aspect-[16/9] w-full overflow-hidden">
+                    <img
+                      src={group.image}
+                      alt={group.alt}
+                      className="h-full w-full object-cover transition-transform duration-300 ease-out group-hover:scale-[1.03]" />
+
+                  </div>
+                  <div className="flex flex-1 flex-col p-6 sm:p-8">
+                    <h3 className="t-sub text-paper">{group.title}</h3>
+                    <ul className="mt-4 flex flex-wrap gap-x-2 gap-y-2">
+                      {group.items.map((item) =>
+                    <li
+                      key={item}
+                      className="border border-paper/22 px-3 py-1.5 text-sm text-paper/70">
+
+                          {item}
+                        </li>
+                    )}
+                    </ul>
+                  </div>
                 </article>
               </Reveal>
             )}

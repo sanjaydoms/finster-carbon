@@ -1,3 +1,5 @@
+import { images } from './images';
+
 export const rcbApplications = [
 'Rubber',
 'Plastics',
@@ -62,15 +64,21 @@ export const coOutputs = [
 export const applicationGroups = [
 {
   title: 'Rubber',
-  items: ['Tyres', 'Tubes', 'Seals', 'Gaskets', 'Conveyor Belts']
+  items: ['Tyres', 'Tubes', 'Seals', 'Gaskets', 'Conveyor Belts'],
+  image: images.rubber,
+  alt: 'Industrial rubber seals, gaskets and conveyor belt sections stacked on a pallet'
 },
 {
   title: 'Plastics',
-  items: ['Masterbatch', 'PVC', 'Compounds']
+  items: ['Masterbatch', 'PVC', 'Compounds'],
+  image: images.rcbPellets,
+  alt: 'Recovered carbon black pellets spilling from an opened sack — the feedstock for masterbatch'
 },
 {
   title: 'Coatings',
-  items: ['Paints', 'Industrial Coatings']
+  items: ['Paints', 'Industrial Coatings'],
+  image: images.rcbMacro,
+  alt: 'Macro view of fine recovered carbon black powder, the pigment body used in paints'
 }];
 
 
